@@ -1,7 +1,7 @@
 .row {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  max-height: calc(100vh - 40px);
 }
 
 .row > button {
@@ -37,11 +37,21 @@
 }
 
 .textbox {
-  font-size: 32px;
-  padding: 2px;
-  width: 64px;
-  text-align: center;
-  margin-right: 4px;
+  font-size: 16px;
+  width: 300px;
+  text-align: left;
+  margin-right: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  resize: none;
+  border: 0;
+  border-right: 1px solid #eaeaea;
+  padding: 20px;
+  background-color: #3E6990;
+  color: #fff;
+}
+
+.textbox:focus-visible {
+  outline:none;
 }
 
 .button:hover,
@@ -75,4 +85,13 @@
   width: 0%;
   opacity: 1;
   transition: 0s;
+}
+
+.markdownViewport {
+  max-height: 100vh;
+  overflow-y: scroll;
+  width: calc(100vw - 300px);
+}
+.markdownViewport > * {
+  display: block;
 }
