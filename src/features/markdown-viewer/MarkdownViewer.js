@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { selectMarkdownContent, processMarkdown } from './markdownViewerSlice';
-import styles from './MarkdownViewer.module.css';
-import ReactMarkdown from 'react-markdown'
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { selectMarkdownContent, processMarkdown } from "./markdownViewerSlice";
+import styles from "./MarkdownViewer.module.css";
+import ReactMarkdown from "react-markdown";
 
 export function MarkdownViewer() {
   const MarkdownContent = useSelector(selectMarkdownContent);

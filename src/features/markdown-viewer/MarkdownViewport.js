@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { selectMarkdownContent, processMarkdown } from './markdownViewerSlice';
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { selectMarkdownContent, processMarkdown } from "./markdownViewerSlice";
 
 export function MarkdownViewport(props) {
   const MarkdownContent = useSelector(selectMarkdownContent);
@@ -8,9 +8,5 @@ export function MarkdownViewport(props) {
 
   const preprocessedMarkdown = props.preprocessedMarkdown;
 
-  return (
-    <div id="preview">
-        {preprocessedMarkdown}
-    </div>
-  );
+  return <div id="preview">{preprocessedMarkdown}</div>;
 }

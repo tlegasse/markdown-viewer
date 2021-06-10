@@ -1,18 +1,19 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: "# h1\n## h2\n[link to Google](http://google.com)\n\n`test`\n```test\ncode\n<test>\n```\n* list item 1\n* list item 2\n\n > block\n > quote\n\n![GitHub Logo](http://via.placeholder.com/500x)\n\n**Bold**"
+  value:
+    "# h1\n## h2\n[link to Google](http://google.com)\n\n`test`\n```test\ncode\n<test>\n```\n* list item 1\n* list item 2\n\n > block\n > quote\n\n![GitHub Logo](http://via.placeholder.com/500x)\n\n**Bold**",
 };
 
 export const markdownViewerSlice = createSlice({
-  name: 'markdownViewer',
+  name: "markdownViewer",
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
     processMarkdown: (state, action) => {
       state.value = action.payload;
-    }
-  }
+    },
+  },
 });
 
 export const { processMarkdown } = markdownViewerSlice.actions;

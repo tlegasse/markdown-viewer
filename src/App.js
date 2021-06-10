@@ -1,7 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import { MarkdownViewer } from './features/markdown-viewer/MarkdownViewer';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import { MarkdownViewer } from "./features/markdown-viewer/MarkdownViewer";
+import "./App.css";
 
 function App() {
   return (
