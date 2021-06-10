@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import { MarkdownViewer } from "./features/markdown-viewer/MarkdownViewer";
 import "./App.css";
 
